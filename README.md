@@ -9,7 +9,7 @@ This repository contains a Homebrew tap for [command-code](https://www.npmjs.com
 The easiest way to install command-code is to use its fully qualified name. This automatically adds the tap and trusts the formula.
 
 ```bash
-brew install coetzeer/command-code/command-code
+brew install coetzeestroom/command-code/command-code
 ```
 
 ### Alternative Method (Tap First)
@@ -18,15 +18,15 @@ You can also tap the repository first and then install the formula.
 
 1.  **Tap the repository:**
     ```bash
-    brew tap coetzeer/command-code
+    brew tap coetzeestroom/command-code
     ```
 
 2.  **Trust the command-code formula:**
     For security, it's recommended to trust only the specific formula you intend to install:
     ```bash
-    brew trust --formula coetzeer/command-code/command-code
+    brew trust --formula coetzeestroom/command-code/command-code
     ```
-    *(If you fully trust this tap and its contents, you could optionally trust the whole tap with `brew trust coetzeer/command-code`)*
+    *(If you fully trust this tap and its contents, you could optionally trust the whole tap with `brew trust coetzeestroom/command-code`)*
 
 3.  **Install command-code:**
     ```bash
@@ -38,12 +38,12 @@ You can also tap the repository first and then install the formula.
 1. Check out the repo
 
    ```bash
-   git clone git@github.com:coetzeer/homebrew-command-code.git
+   git clone git@github.com:coetzeestroom/homebrew-command-code.git
    ```
 
 2. Tap the local dir: 
    ```bash
-   brew tap coetzeer/command-code ./homebrew-command-code
+   brew tap coetzeestroom/command-code ./homebrew-command-code
    ```
 
 ### Verify Installation
