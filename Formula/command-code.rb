@@ -1,8 +1,8 @@
 class CommandCode < Formula
   desc "AI coding agent that runs in your terminal"
   homepage "https://www.npmjs.com/package/command-code"
-  url "https://registry.npmjs.org/command-code/-/command-code-1.44.0.tgz"
-  sha256 "b29eb2c53e8c4cd1a4ace4de311225a2f8d9ab8508a6180d90e1d965ea6e7dbd"
+  url "https://registry.npmjs.org/command-code/-/command-code-1.47.0.tgz"
+  sha256 "a34a724f072d740a93fb74e53a154022a91a0f9c2913fe8eefc05354e2a799b8"
   license "MIT"
 
   depends_on "node@22"
