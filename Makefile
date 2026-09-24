@@ -1,4 +1,4 @@
-.PHONY: brew-cleanup-before brew-setup brew-tap-syntax brew-formulae brew-verify
+.PHONY: test brew-cleanup-before brew-setup brew-tap-syntax brew-formulae brew-verify
 
 TEST_BOT_FORMULAE ?= command-code
 
@@ -15,3 +15,5 @@ brew-formulae:
 	brew test-bot --only-formulae --testing-formulae=$(TEST_BOT_FORMULAE)
 
 brew-verify: brew-cleanup-before brew-setup brew-tap-syntax brew-formulae
+
+test: brew-verify
