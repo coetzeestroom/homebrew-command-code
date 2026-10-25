@@ -54,4 +54,12 @@ jobs:
           key: ${{ matrix.os }}-rubygems-${{ steps.set-up-homebrew.outputs.gems-hash }}
           restore-keys: ${{ matrix.os }}-rubygems-
 
-      - run: make test
+      # On macOS `setup-homebrew` moves the tap into the workspace, but inside a
+      # container it stays in `Library/Taps`, so resolve the tap path explicitly
+      # rather than assuming the Makefile is in the default working directory.
+      - name: Run make test
+        env:
+          TAP_NAME: ${{ steps.set-up-homebrew.outputs.tap-name }}
+        run: |
+          cd "$(brew --repository "$TAP_NAME")"
+          make test
